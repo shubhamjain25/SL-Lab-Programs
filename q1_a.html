@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q1</title>
+</head>
+<body>
+	<h3>Press the below button to activate two click listeners</h3>
+	<input id="btn1" type="button" value="Press it!">
+	<br>
+	<br>
+	<select id="select1" onchange="displayFood()">
+		<option value="Food1">Food1</option>
+		<option value="Food2">Food2</option>
+		<option value="Food3">Food3</option>
+		<option value="Food4">Food4</option>
+	</select>
+
+	<script type="text/javascript">
+		var btnPress = document.getElementById("btn1");
+		var btnSelect = document.getElementById("select1");
+
+		btnPress.addEventListener("click",func1);
+		btnPress.addEventListener("click",func2);
+
+		function displayFood(){
+			alert("Food selected: "+btnSelect.value);
+		}
+
+		function func1(){
+			alert("function 1 here");
+		}
+
+		function func2(){
+			alert("function 2 here");
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q5</title>
+</head>
+<body>
+	<h3>Enter a number: </h3>
+	<input type="text" id="numBtn">
+	<input type="button" value="Tap to get result" id="resBtn" onclick="getResults()">
+
+	<h4 id="resultBox"></h4>
+
+	<script type="text/javascript">
+
+		function getResults(){
+			var num = document.getElementById("numBtn").value;
+			document.getElementById("resultBox").innerHTML = num%7==0 || num%3==0 ?"TRUE":"FALSE"
+		}
+	
+	</script>
+</body>
+</html>

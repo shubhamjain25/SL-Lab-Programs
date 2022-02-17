@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q6</title>
+</head>
+<body>
+	<h3>Enter number 1: </h3>
+	<input type="text" id="numBtn1">
+	<br>
+	<h3>Enter number 2: </h3>
+	<input type="text" id="numBtn2">
+	<br>
+	<br>
+	<input type="button" value="Add" id="addBtn" onclick="getResults1()">
+	<input type="button" value="Multiply" id="mulBtn" onclick="getResults2()">
+	<br>
+	
+	<h4 id="resultBox"></h4>
+
+	<script type="text/javascript">
+
+		function getResults1(){
+			var num1 = document.getElementById("numBtn1").value;
+			var num2 = document.getElementById("numBtn2").value;
+			var sum = parseInt(num1)+parseInt(num2);
+			document.getElementById("resultBox").innerHTML = "Result equals: "+sum;
+		}
+
+		function getResults2(){
+			var num1 = document.getElementById("numBtn1").value;
+			var num2 = document.getElementById("numBtn2").value;
+			document.getElementById("resultBox").innerHTML = "Result equals: "+parseInt(num1)*parseInt(num2);
+		}
+	
+	</script>
+</body>
+</html>

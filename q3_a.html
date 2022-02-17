@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q3</title>
+</head>
+<body>
+
+	<h3> Write text: </h3>
+	<textarea id="textBtn" onkeydown="mouseDown()" onkeyup="mouseUp()"></textarea>
+
+	<br>
+
+	<h3> Tap to change bg color: </h3>
+	<input type="button" id="colorBtn" value="Tap Here!" onclick="btnPress()">
+
+	<script>
+		var textBlock = document.getElementById("textBtn");
+		var colorBlock = document.getElementById("colorBtn");
+
+		function mouseDown(){
+			textBlock.style.backgroundColor = "yellow";	
+		}
+
+		function mouseUp(){
+			textBlock.style.backgroundColor = "red";	
+		}
+
+		function btnPress(){
+			document.body.style.backgroundColor = document.body.style.backgroundColor == "red"?"green":"red";
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q4</title>
+</head>
+<body>
+	<form>
+		<h3>Enter name: </h3>
+		<input type="text" id="nameBox">
+		<br>
+		<h3>Enter usn: </h3>
+		<input type="text" id="usnBox">
+	</form>
+	<br>
+	<input type="button" value="Press to get result!" onclick="btnPressed()">
+	<h2 id="resultBox"></h2>
+	<h3 id="nameDisplay"></h3>
+	<h3 id="usnDisplay"></h3>
+
+	<script type="text/javascript">
+		
+		function btnPressed(){
+			var name = document.getElementById("nameBox").value;
+			var usn = document.getElementById("usnBox").value;
+
+			document.getElementById("resultBox").innerHTML = "Result equals: ";
+			document.getElementById("nameDisplay").innerHTML = name;			
+			document.getElementById("usnDisplay").innerHTML = usn;
+		}
+
+	</script>
+</body>
+</html>
